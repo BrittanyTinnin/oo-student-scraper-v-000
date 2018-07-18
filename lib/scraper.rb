@@ -34,10 +34,8 @@ class Scraper
         hash[:blog] = href
       end
     end
-    p_quote = doc.css(".vitals-text-container .profile-quote").text
-    the_bio = doc.css(".details-container .description-holder p").text
-    hash[:profile_quote] = p_quote
-    hash[:bio] = the_bio
+    hash[:profile_quote] = doc.css(".vitals-text-container .profile-quote").text
+    hash[:bio] = doc.css(".details-container .description-holder p").text
     hash
   end
 end
