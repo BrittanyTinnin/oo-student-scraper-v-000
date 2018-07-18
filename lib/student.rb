@@ -11,22 +11,9 @@ class Student
     @@all << self
   end
 
- #  [{:name=>"Alex Patriquin", :location=>"New York, NY"},
- # {:name=>"Bacon McRib", :location=>"Kansas City, MO"},
- # {:name=>"Alisha McWilliams", :location=>"San Francisco, CA"},
- # {:name=>"Daniel Fenjves", :location=>"Austin, TX"},
- # {:name=>"Arielle Sullivan", :location=>"Chicago, IL"},
- # {:name=>"Sushanth Bhaskarab", :location=>"Portland, OR"},
- # {:name=>"Sushanth Bhaskarab", :location=>"Portland, OR"}]
-
   def self.create_from_collection(students_array)
     students_array.map do |student|
-<<<<<<< HEAD
       Student.new(student)
-=======
-
-      binding.pry
->>>>>>> e5bcf448975966128a773996da378f60e2b620ff
     end
   end
 
