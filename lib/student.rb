@@ -21,7 +21,12 @@ class Student
 
   def self.create_from_collection(students_array)
     students_array.map do |student|
+<<<<<<< HEAD
       Student.new(student)
+=======
+
+      binding.pry
+>>>>>>> e5bcf448975966128a773996da378f60e2b620ff
     end
   end
 
@@ -37,7 +42,11 @@ class Student
 #   "I was in southern California for college (sun and In-n-Out!), rural Oregon for high school (lived in a town with 1500 people an
 # d 3000+ cows), and Tokyo for elementary/middle school."}
   def add_student_attributes(attributes_hash)
+<<<<<<< HEAD
     attributes_hash.each{|key, value| self.send(("#{key}="), value)}
+=======
+
+>>>>>>> e5bcf448975966128a773996da378f60e2b620ff
   end
 
   def self.all
